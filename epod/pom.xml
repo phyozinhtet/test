@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>com.y3</groupId>
+	
+	<artifactId>epod</artifactId>
+	<packaging>war</packaging>
+	<version>0.0.1</version>
+	
+	<name>Epod</name>
+	<url>http://www.y3technologies.com</url>
+	<organization>
+		<name>Y3 Technologies Pte Ltd</name>
+		<url>http://y3technologies.com</url>
+	</organization>
+	<developers>
+		<developer>
+			<id>flora.phyo</id>
+			<name>Phyo Zin Htet</name>
+			<email>flora.phyo@y3technologies.com</email>
+			<organization>Y3 Technologies Pte Ltd</organization>
+			<organizationUrl>http://y3technologies.com</organizationUrl>
+		</developer>
+	</developers>
+	
+	<properties>
+	    <java.version>1.8</java.version>
+	    <context.path>epod</context.path>
+	</properties>
+	
+	<parent>
+	    <groupId>org.springframework.boot</groupId>
+  	    <artifactId>spring-boot-starter-parent</artifactId>
+	    <version>1.5.6.RELEASE</version>
+ 	    <relativePath/>
+	</parent>
+	
+	<dependencies>
+	  <dependency>
+		<groupId>org.springframework.boot</groupId>
+		<artifactId>spring-boot-starter-web</artifactId>
+	  </dependency>
+	  <dependency>
+		<groupId>org.springframework.boot</groupId>
+		<artifactId>spring-boot-starter-security</artifactId>
+	  </dependency>
+	  <dependency>
+		<groupId>org.springframework.boot</groupId>
+		<artifactId>spring-boot-starter-data-jpa</artifactId>
+	  </dependency>
+	  <dependency>
+		<groupId>org.springframework.boot</groupId>
+		<artifactId>spring-boot-starter-tomcat</artifactId>
+		<scope>provided</scope>
+	  </dependency>  
+	  
+	  <dependency>
+		<groupId>io.springfox</groupId>
+		<artifactId>springfox-swagger2</artifactId>
+	    <version>2.8.0</version>		
+	  </dependency>
+	  <dependency>
+		<groupId>io.springfox</groupId>
+		<artifactId>springfox-swagger-ui</artifactId>
+	    <version>2.8.0</version>		
+	  </dependency>	  	  
+	  
+	  <dependency>
+		<groupId>org.hibernate</groupId>
+		<artifactId>hibernate-envers</artifactId>
+		</dependency>
+		
+	  <dependency>
+	    <groupId>org.apache.commons</groupId>
+	    <artifactId>commons-lang3</artifactId>
+	    <version>3.7</version>
+	  </dependency>
+		
+	</dependencies>
+	
+	<build>
+	  <plugins>
+	    <plugin>
+		  <groupId>org.apache.maven.plugins</groupId>
+		  <artifactId>maven-war-plugin</artifactId>
+		  <version>3.0.0</version>
+		  <configuration>
+			 <warName>${context.path}</warName>
+		  </configuration>
+		</plugin>
+	  </plugins>
+	</build>
+</project> 

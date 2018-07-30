@@ -1,0 +1,7 @@
+com\y3\config\AppConfig.class
+com\y3\config\WebAppInitializer.class
+com\y3\service\ArticleService.class
+com\y3\service\IArticleService.class
+com\y3\domain\Article.class
+com\y3\config\SwaggerConfig.class
+com\y3\controller\ArticleController.class
